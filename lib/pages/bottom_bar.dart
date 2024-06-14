@@ -58,6 +58,7 @@ class _BottomBarState extends State<BottomBar> {
         showUnselectedLabels: true,
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.amber,
+        backgroundColor: Colors.white,
         selectedIconTheme: const IconThemeData(size: 32),
         onTap: _onItemTapped,
       ),

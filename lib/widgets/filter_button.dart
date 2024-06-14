@@ -103,7 +103,8 @@ class _FilterButtonState extends State<FilterButton> {
             // );
           },
           style: ElevatedButton.styleFrom(
-              minimumSize: const Size(double.infinity, 50),
+              minimumSize: const Size(double.infinity, 0),
+              padding: const EdgeInsets.symmetric(vertical: 8),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),

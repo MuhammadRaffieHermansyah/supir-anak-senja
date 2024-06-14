@@ -21,32 +21,38 @@ class _RiwayatPageState extends State<RiwayatPage> {
         appBar: AppBar(
           backgroundColor: Colors.amber,
           iconTheme: const IconThemeData(color: Colors.white),
-          title: const Text(
-            'Riwayat',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
+          title: const Center(
+            child: Text(
+              'Riwayat',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
           ),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(
-              Icons.arrow_back,
-            ),
-          ),
+          // leading: IconButton(
+          //   onPressed: () {
+          //     Navigator.pop(context);
+          //   },
+          //   icon: const Icon(
+          //     Icons.arrow_back,
+          //   ),
+          // ),
           bottom: const TabBar(
+            // padding: EdgeInsets.only(top: 10),
+            dividerColor: Colors.white,
             indicatorSize: TabBarIndicatorSize.tab,
             indicator: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(15),
-                topRight: Radius.circular(15),
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
               ),
             ),
-            labelStyle:
-                TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            labelStyle: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
             indicatorColor: Colors.white,
             indicatorWeight: 5,
             indicatorPadding: EdgeInsets.all(0),

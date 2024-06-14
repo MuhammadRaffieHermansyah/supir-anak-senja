@@ -24,9 +24,9 @@ class UpdateAccount extends StatelessWidget {
               title: 'Nama',
               subTitle: 'Budi Jawa',
               icon: Icon(
-                Icons.email_outlined,
+                Icons.person_outline,
                 color: Colors.orange,
-                size: 26,
+                size: 20,
               ),
             ),
             InfoAccount(
@@ -35,7 +35,7 @@ class UpdateAccount extends StatelessWidget {
               icon: Icon(
                 Icons.email_outlined,
                 color: Colors.orange,
-                size: 26,
+                size: 20,
               ),
             ),
             SizedBox(height: 16),
@@ -45,7 +45,7 @@ class UpdateAccount extends StatelessWidget {
               icon: Icon(
                 Icons.person_pin_outlined,
                 color: Colors.orange,
-                size: 26,
+                size: 20,
               ),
             ),
             SizedBox(height: 16),
@@ -55,7 +55,7 @@ class UpdateAccount extends StatelessWidget {
               icon: Icon(
                 Icons.car_repair_outlined,
                 color: Colors.orange,
-                size: 26,
+                size: 20,
               ),
             ),
             SizedBox(height: 16),
@@ -65,7 +65,7 @@ class UpdateAccount extends StatelessWidget {
               icon: Icon(
                 Icons.phone,
                 color: Colors.orange,
-                size: 26,
+                size: 20,
               ),
             ),
             SizedBox(height: 16),
@@ -75,7 +75,7 @@ class UpdateAccount extends StatelessWidget {
               icon: Icon(
                 Icons.people,
                 color: Colors.orange,
-                size: 26,
+                size: 20,
               ),
             ),
             SizedBox(height: 16),
@@ -85,7 +85,7 @@ class UpdateAccount extends StatelessWidget {
               icon: Icon(
                 Icons.location_on_outlined,
                 color: Colors.orange,
-                size: 26,
+                size: 20,
               ),
             ),
             SizedBox(height: 16),

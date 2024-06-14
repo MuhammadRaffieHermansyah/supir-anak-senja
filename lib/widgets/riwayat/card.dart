@@ -21,7 +21,7 @@ class _CardRiwayatState extends State<CardRiwayat> {
               style: TextStyle(
                 color: Colors.orange,
                 fontWeight: FontWeight.bold,
-                fontSize: 18,
+                fontSize: 16,
               ),
             ),
             TextButton(
@@ -38,7 +38,7 @@ class _CardRiwayatState extends State<CardRiwayat> {
                 style: TextStyle(
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
-                  fontSize: 18,
+                  fontSize: 16,
                 ),
               ),
             ),
@@ -54,13 +54,17 @@ class _CardRiwayatState extends State<CardRiwayat> {
                 children: [
                   Text(
                     'Abdul Razaq Fadli',
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12,
+                    ),
                   ),
                   Text(
                     'Kelas IX - B',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
+                      fontSize: 12,
                     ),
                   ),
                 ],
@@ -71,13 +75,17 @@ class _CardRiwayatState extends State<CardRiwayat> {
                 children: [
                   Text(
                     'Abdul Razaq Fadli',
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12,
+                    ),
                   ),
                   Text(
                     'Kelas IX - B',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
+                      fontSize: 12,
                     ),
                   ),
                 ],
@@ -88,13 +96,17 @@ class _CardRiwayatState extends State<CardRiwayat> {
                 children: [
                   Text(
                     'Abdul Razaq Fadli',
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12,
+                    ),
                   ),
                   Text(
                     'Kelas IX - B',
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
+                      fontSize: 12,
                     ),
                   ),
                 ],
