@@ -4,8 +4,6 @@ import 'package:tes/pages/home_page.dart';
 import 'package:tes/pages/profile_page.dart';
 import 'package:tes/pages/riwayat_page.dart';
 
-/// Flutter code sample for [BottomNavigationBar].
-
 class BottomBar extends StatefulWidget {
   const BottomBar({super.key});
 
@@ -15,11 +13,11 @@ class BottomBar extends StatefulWidget {
 
 class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
-  static const List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
-    RiwayatPage(),
-    BantuanPage(),
-    ProfilPage()
+  final List<Widget> _widgetOptions = <Widget>[
+    const HomePage(),
+    const RiwayatPage(),
+    const BantuanPage(),
+    const ProfilPage()
   ];
 
   void _onItemTapped(int index) {
@@ -54,10 +52,10 @@ class _BottomBarState extends State<BottomBar> {
           ),
         ],
         type: BottomNavigationBarType.fixed,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: Colors.black,
         showUnselectedLabels: true,
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber,
+        selectedItemColor: Colors.orange,
         backgroundColor: Colors.white,
         selectedIconTheme: const IconThemeData(size: 32),
         onTap: _onItemTapped,

@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:tes/models/absen.dart';
 
 class DetailSiswa extends StatelessWidget {
-  const DetailSiswa({super.key});
+  const DetailSiswa({
+    super.key,
+    required this.listSiswa,
+  });
+
+  final List<Siswa> listSiswa;
 
   @override
   Widget build(BuildContext context) {
@@ -14,24 +20,25 @@ class DetailSiswa extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.orange,
         iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: ListView.separated(
-        itemCount: 50,
+        itemCount: listSiswa.length,
         scrollDirection: Axis.vertical,
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
         itemBuilder: (context, index) {
-          return const Row(
+          Siswa siswa = listSiswa[index];
+          return Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'Abdul Razaq Fadli',
-                style: TextStyle(color: Colors.grey),
+                '${index + 1}. ${siswa.name}',
+                style: const TextStyle(color: Colors.black87),
               ),
               Text(
-                'Kelas IX - B',
-                style: TextStyle(
+                siswa.siswaClass,
+                style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
@@ -39,7 +46,7 @@ class DetailSiswa extends StatelessWidget {
             ],
           );
         },
-        separatorBuilder: (context, index) => const SizedBox(height: 20),
+        separatorBuilder: (context, index) => const SizedBox(height: 8),
       ),
     );
   }

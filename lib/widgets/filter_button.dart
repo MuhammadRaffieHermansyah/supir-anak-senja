@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -60,23 +61,24 @@ class _FilterButtonState extends State<FilterButton> {
                 width: 6,
               ),
               Expanded(
-                  child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const Text(
-                    'Pilih Tanggal',
-                    style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16),
-                  ),
-                  Text(
-                    "${DateFormat('dd/MM/y').format(_selectedDate.start)} - ${DateFormat('dd/MM/y').format(_selectedDate.end)}",
-                    style: const TextStyle(
-                        fontSize: 13, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              )),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const Text(
+                      'Pilih Tanggal',
+                      style: TextStyle(
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16),
+                    ),
+                    Text(
+                      "${DateFormat('dd/MM/y').format(_selectedDate.start)} - ${DateFormat('dd/MM/y').format(_selectedDate.end)}",
+                      style: const TextStyle(
+                          fontSize: 13, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
               const Icon(
                 Icons.arrow_forward_ios_outlined,
                 color: Colors.amber,
@@ -92,7 +94,7 @@ class _FilterButtonState extends State<FilterButton> {
             String dateRange =
                 "?start=${DateFormat('y-MM-dd').format(_selectedDate.start)}&end=${DateFormat('y-MM-dd').format(_selectedDate.end)}";
             // print(selectedDate);
-            print(dateRange);
+            log(dateRange);
             // Navigator.pushReplacement(
             //   context,
             //   MaterialPageRoute(
